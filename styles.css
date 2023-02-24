@@ -1,5 +1,8 @@
 body {
   font-family: "Trebuchet MS", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .hero,
@@ -78,6 +81,17 @@ a {
   align-items: center;
 }
 
+.singleImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singleImage p {
+  font-size: 24px;
+  text-align: center;
+}
+
 .quoteSection {
   background-color: #e5e7eb;
   text-align: center;
@@ -99,10 +113,15 @@ a {
 }
 
 .callToAction {
+  padding-top: 70px;
+}
+
+.box {
   background-color: #3882f6;
   color: white;
   border-radius: 10px;
   display: flex;
+  justify-content: space-around;
 }
 
 button {
@@ -120,4 +139,18 @@ button {
 
 .signUpText {
   font-size: 20px;
+}
+
+.signUpButton {
+  align-self: center;
+  border-color: #f9faf8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  height: 70px;
 }
